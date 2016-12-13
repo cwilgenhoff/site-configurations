@@ -7,7 +7,7 @@
     "build": "webpack --progress --color --watch --config webpack.base.js",
     "lint": "eslint --ignore-path .gitignore . ; exit 0",
     "test": "mocha --compilers js:babel-register --require babel-polyfill --recursive tests",
-    "test:browser": "webpack --config webpack.tests.js"
+    "test:browser": "webpack --config webpack.tests.js && open public/index.html"
   },
   "dependencies": {},
   "devDependencies": {
